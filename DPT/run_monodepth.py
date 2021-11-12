@@ -228,6 +228,7 @@ if __name__ == "__main__":
     torch.backends.cudnn.enabled = True
     torch.backends.cudnn.benchmark = True
 
+    print(args.model_weights)
     # compute depth maps
     run(
         args.input_path,
